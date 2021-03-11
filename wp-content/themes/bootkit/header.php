@@ -144,3 +144,8 @@ if (get_theme_mod('bootkit_phone_number')) {
         </div><!-- #top-search end -->
         <?php }?>
     </div>
+
+    <div class="my-new-sidebar">
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("Bootkit")): ?>
+        <?php endif;?>
+    </div>

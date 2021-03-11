@@ -4,7 +4,7 @@ Plugin Name: Load More Button
 Plugin URI: http://ex.com/
 Description: Simple Load More Button plugin with AJAX
 Author: MAI
-Version: 1.1
+Version: 1.5.0
 Author URI: http://ex.com/
  */
 
@@ -19,6 +19,7 @@ function bootkit_load_more_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'bootkit_load_more_scripts');
+add_action('wp_enqueue_scripts', 'bootkit_load_more_scripts');
 
 function create_button_and_script()
 {
@@ -29,7 +30,7 @@ function create_button_and_script()
     if ($wp_query->max_num_pages > 1) {
 
         echo '<div class="container">
-    <div id="bootkit_loadmore" class="btn btn-primary">Load more</div>
+    <div id="bootkit_loadmore" class=" btn btn-primary">Load more</div>
 </div>';
         echo "\n<script>\n";
         echo "var ajaxurl = '" . site_url() . "/wp-admin/admin-ajax.php';\n";
@@ -51,13 +52,14 @@ function bootkit_load_posts()
     $args['post_status'] = 'publish'; // только опубликованные
     $args['posts_per_page'] = 2; // сколько постов на странице (подгружать по 2)
 
-    // определяем, какие посты будут показаны в базовом цикле WordPress
+    // определяет, какие посты будут показаны в базовом цикле WordPress
     query_posts($args);
 
     if (have_posts()) {
         while (have_posts()) {
             the_post();
-            echo the_title();
+            // echo the_title();
+            include "templates/template.php";
         }
     }
     die();

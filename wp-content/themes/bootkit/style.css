@@ -10,9 +10,9 @@ Domain Path: /languages
 */
 
 /* calendar widget */
-.widget_calendar {
+/* .widget_calendar {
   float: left;
-}
+} */
 #wp-calendar {
   width: 100%;
 }

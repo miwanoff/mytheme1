@@ -118,12 +118,19 @@ function bootkit_ajax()
 }
 
 //Create Sidebar Area Bootkit
-if (function_exists('register_sidebars')) {
-    register_sidebar(array(
-        'name' => 'Bootkit',
-        'before_widget' => '<div id="%1$s" class="backgroundlist %2$s"><div class="listtitle">',
-        'after_widget' => '</div></div>',
-        'before_title' => '<h2>',
-        'after_title' => '</h2></div><div class="contentbox">',
-    ));
-}
+// if (function_exists('register_sidebars')) {
+//     register_sidebar(array(
+//         'name' => 'Bootkit',
+//         'before_widget' => '<div id="%1$s" class="backgroundlist %2$s"><div class="listtitle">',
+//         'after_widget' => '</div></div>',
+//         'before_title' => '<h2>',
+//         'after_title' => '</h2></div><div class="contentbox">',
+//     ));
+// }
+
+// function true_remove_calendar_widget()
+// {
+//     unregister_widget('WP_Widget_Calendar');
+// }
+
+// add_action('widgets_init', 'true_remove_calendar_widget', 5);

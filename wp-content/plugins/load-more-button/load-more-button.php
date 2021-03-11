@@ -42,3 +42,26 @@ function create_button_and_script()
 
 }
 add_action('get_footer', 'create_button_and_script');
+
+function bootkit_load_posts()
+{
+
+    $args = unserialize(stripslashes($_POST['query'])); // запрос от скрипта
+    $args['paged'] = $_POST['page']; // номер страницы
+    $args['post_status'] = 'publish'; // только опубликованные
+    $args['posts_per_page'] = 2; // сколько постов на странице (подгружать по 2)
+
+    // определяем, какие посты будут показаны в базовом цикле WordPress
+    query_posts($args);
+
+    if (have_posts()) {
+        while (have_posts()) {
+            the_post();
+            echo the_title();
+        }
+    }
+    die();
+}
+
+add_action('wp_ajax_loadmore', 'bootkit_load_posts');
+add_action('wp_ajax_nopriv_loadmore', 'bootkit_load_posts');

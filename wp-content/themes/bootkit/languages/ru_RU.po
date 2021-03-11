@@ -1,0 +1,135 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bootkit\n"
+"POT-Creation-Date: 2021-02-26 18:36+0200\n"
+"PO-Revision-Date: 2021-03-04 16:47+0200\n"
+"Last-Translator: \n"
+"Language-Team: M.A.\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:9
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: 404.php:23
+msgid "The page you're looking for could not be found"
+msgstr "Страница, которую вы ищете, не может быть найдена"
+
+#: category-culpa-officiis.php:37 category.php:37 index.php:31 search.php:37
+msgid "Older"
+msgstr "Предыдущие"
+
+#: category-culpa-officiis.php:41 category.php:41 index.php:35 search.php:41
+msgid "Newer"
+msgstr "Следующие"
+
+#: comments.php:27
+msgid "Name"
+msgstr "Имя"
+
+#: comments.php:32 includes/customizer/social.php:52
+msgid "Email"
+msgstr ""
+
+#: comments.php:37
+msgid "Website"
+msgstr "Веб-сайт"
+
+#: comments.php:42
+msgid "Submit Comment"
+msgstr "Отправить комментарий"
+
+#: comments.php:43
+msgid "Leave a Comment"
+msgstr "Оставить комментарий"
+
+#: full-width.php:35 mini.php:12 mini_news.php:14 page.php:32 single.php:52
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: includes/custom-massages.php:15
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/customizer/misc.php:6
+msgid "Bootkit additional Settings"
+msgstr "Дополнительные настройки Bootkit"
+
+#: includes/customizer/misc.php:19
+msgid "Show Search Button in Header"
+msgstr "Показать кнопку поиска в загололвке"
+
+#: includes/customizer/social.php:7
+msgid "Bootkit Social Settings"
+msgstr "Дополнительные настройки Bootkit"
+
+#: includes/customizer/social.php:19
+msgid "Facebook"
+msgstr ""
+
+#: includes/customizer/social.php:33
+msgid "Instagram"
+msgstr ""
+
+#: includes/customizer/social.php:63
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+#: includes/setup.php:5
+msgid "Primary Menu"
+msgstr "Основное меню"
+
+#: includes/widgets.php:5
+msgid "Bootkit first Sidebar"
+msgstr "Первый сайдбар Bootkit"
+
+#: includes/widgets.php:7
+msgid "Bootkit first Sidebar for something."
+msgstr "Первый сайдбар Bootkit для ..."
+
+#: includes/widgets.php:17
+msgid "Bootkit second Sidebar for something."
+msgstr "Второй сайдбар Bootkit."
+
+#: partials/posts/content-excerpt.php:16
+msgid "Read More"
+msgstr "Читать далее"
+
+#: partials/posts/content-excerpt.php:19
+msgid "Post category: "
+msgstr "Рубрика: "
+
+#: partials/posts/content-excerpt.php:21
+msgid "Posted on: "
+msgstr "Опубликовано: "
+
+#: partials/posts/content-excerpt.php:24
+msgid "Comments: "
+msgstr "Комментарии: "
+
+#: partials/posts/content-none.php:1
+msgid "Nothing found"
+msgstr "Ничего не найдено"
+
+#: partials/posts/content-none.php:2
+msgid "Nothing found, please use the search."
+msgstr "Ничего не найдено, попробуйте использовать поиск."
+
+#: search.php:5
+msgid "Search Results for:"
+msgstr "Результаты поиска для:"
+
+#: search.php:18
+msgid "What are you searhing for today?"
+msgstr "Что вы ищете сегодня?"
+
+#: searchform.php:10 searchform.php:12
+msgid "Search"
+msgstr "Поиск"

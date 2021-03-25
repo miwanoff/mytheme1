@@ -82,12 +82,12 @@ class R_Daily_Recipe_Widget extends WP_Widget
         }
 
         ?>
-<div class="recepi-image">
+<div class="recipe-image">
     <a href="<?php echo get_permalink($recipe_id); ?>">
         <?php echo get_the_post_thumbnail($recipe_id, 'thumbnail'); ?>
     </a>
 </div>
-<div class="recepi-desc center nobottompadding">
+<div class="recipe-desc center nobottompadding">
     <h4 class="mb-4"><a href="<?php echo get_permalink($recipe_id); ?>">
             <?php echo get_the_title($recipe_id); ?>
         </a></h3>

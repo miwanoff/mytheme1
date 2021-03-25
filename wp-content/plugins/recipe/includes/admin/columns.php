@@ -7,6 +7,7 @@ function r_add_new_recipe_columns($columns)
     $new_columns['title'] = __('Title', 'recipe');
     $new_columns['author'] = __('Author', 'recipe');
     $new_columns['categories'] = __('Categories', 'recipe');
+    $new_columns['tags'] = __('Tags', 'recipe');
     $new_columns['count'] = __('Ratings count', 'recipe');
     $new_columns['rating'] = __('Average Rating', 'recipe');
     $new_columns['date'] = __('Date', 'recipe');

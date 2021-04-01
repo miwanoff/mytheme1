@@ -139,4 +139,21 @@ class Kit_Copyright_Admin
 
     }
 
+    /**
+     * Validate options
+     */
+    public function validate($input)
+    {
+        $valid = array();
+        $valid['footer_text'] = (isset($input['footer_text']) && !empty($input['footer_text'])) ? $input['footer_text'] : '';
+        return $valid;
+    }
+/**
+ * Update all options
+ */
+    public function options_update()
+    {
+        register_setting($this->plugin_name, $this->plugin_name, array($this, 'validate'));
+    }
+
 }

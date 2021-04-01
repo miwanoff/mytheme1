@@ -16,9 +16,12 @@ if (!defined('WPINC')) {
 }
 
 // Setup
+define('KC_PLUGIN_URL', __FILE__);
 
 // Includes
+include 'includes/front/enqueue.php';
 
 // Hooks
+add_action('wp_enqueue_scripts', 'kc_enqueue_scripts', 100);
 
 // Shortcodes

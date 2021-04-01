@@ -44,7 +44,7 @@ function kc_show_carousel($content)
                         <h4>12</h4>
                     </div>
                 </div>
-// Place for buttons
+/<!-- Place for buttons -->
             </div>
         </div>
     </section>';

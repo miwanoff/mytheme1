@@ -4,12 +4,12 @@ function kc_show_carousel($content)
 {
 
     $args = [
-        //'post_type' => 'post',
-        'showposts' => 8,
-        //'category_name' => 'cooking',
+        'post_type' => get_option('kc_post_type') ? get_option('kc_post_type') : 'post',
+        'showposts' => get_option('kc_count'),
+        'category_name' => get_option('kc_category_name'),
         //'post_type' => 'recipe',
-        'post_type' => 'movies',
-        //'tag' => 'cooking',
+        //'post_type' => 'movies',
+        'tag' => get_option('kc_tag'),
         'post_status' => 'publish',
         'orderby' => 'date',
         'order' => 'DESC',
@@ -26,8 +26,8 @@ function kc_show_carousel($content)
         while ($query->have_posts()) {
             $query->the_post();
 
-            $html .= '<div class="item"><h5>';
-            $html .= '<a href="' . get_permalink($query->post->ID) . '">' . $query->post->post_title . '</a>';
+            $html .= '<div class="item" style="background:url(' . get_the_post_thumbnail_url($query->post->ID, 'thumbnail') . ' ) #80808078;"><h5>';
+            $html .= '<a href="' . get_permalink($query->post->ID) . '" style="color:white;">' . $query->post->post_title . '</a>';
             $html .= '</h5></div>';
         }
         $html .= '</div>
@@ -36,5 +36,5 @@ function kc_show_carousel($content)
         </div>
     </section>';
     }
-    return $content . $html;
+    return $html . $content;
 }
